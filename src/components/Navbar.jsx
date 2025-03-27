@@ -23,9 +23,11 @@ import 'swiper/css/pagination';
 import { HashLink } from "react-router-hash-link";
 // import { HashLink } from 'react-router-hash-link';
 
+import logo from "../assets/logo.svg"
 
 
-const Navbar = ({color,name}) => {
+
+const Navbar = ({color}) => {
 //   const Navigate = useNavigate()
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef()
@@ -46,11 +48,7 @@ const Navbar = ({color,name}) => {
           <Flex
             w={isLargerThan900 && "100%"}
           >
-            {/* <Image src={name}/> */}
-           <Text className="font-Sora text-2xl font-semibold ">
-             Naveen
-            
-            </Text>
+            <Image src={logo}/>
             {/* Astro Gopal Pandit */}
           </Flex>
           {isLargerThan700 && <Flex

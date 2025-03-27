@@ -13,14 +13,10 @@ import planet from "../assets/Planet.webp";
 import numerology from "../assets/numerology.webp";
 import varshafal from "../assets/varshafal.svg";
 import palmistry from "../assets/palmistry.svg";
-import ss1 from "../assets/Screenshot1.png";
-import ss2 from "../assets/Screenshot2.png";
-import ss3 from "../assets/Screenshot3.png";
 
 import circle from "../assets/Circle.svg";
 import astro from "../assets/astro.webp";
 import HLine from "../assets/HLine.svg";
-import name from "../assets/Astro Gopal Pandit.webp";
 import services from "../assets/services.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -119,7 +115,7 @@ function Homepage() {
       <div className="relative h-full bg-hero bg-cover bg-center text-white pb-2">
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative">
-          <Navbar color={"white"} name={name} />
+          <Navbar color={"white"}  />
           <div className="my-11">
             <div className="flex w-[85%] m-auto max-md:inline">
               <div className="w-[55%] m-auto max-md:w-[93%]">
@@ -163,7 +159,7 @@ function Homepage() {
                   </div>
                   <img
                     src={img1}
-                    className="absolute -top-[5.3rem] left-7 w-full h-[550px] object-cover max-md:h-[360px] max-md:top-[-3.3rem] max-md:left-3"
+                    className="absolute -top-[1.5rem] left-7 w-full h-[470px] object-cover max-md:h-[360px] max-md:top-[-3.3rem] max-md:left-3"
                   ></img>
                 </div>
               </div>
@@ -325,7 +321,7 @@ function Homepage() {
             display="flex"
             mx="auto"
             flexDir="column"
-            w={isLargerThan1000 ? "75%" : "100%"}
+            w={isLargerThan1000 ? "80%" : "100%"}
             h="100%"
             textAlign="start"
           >
