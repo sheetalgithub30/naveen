@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Crimson Text", sans-serif;
+}
+
+.swiper-pagination {
+  bottom: -3px !important; /* Position it to make sure it's visible */
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #00000042; /* Default color */
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f57937 !important; /* Active bullet color */
+}
+
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
