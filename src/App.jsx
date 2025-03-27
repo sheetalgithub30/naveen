@@ -1,6 +1,6 @@
 import React from 'react'
 import Homepage from './Pages/Homepage'
-// import Servicepage from './Pages/Servicepage'
+import Servicepage from './Pages/ServicePage'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import TermsOfUse from './Pages/TermsOfUse'
 import PrivacyPolicy from './Pages/PrivacyPolicy'
@@ -14,6 +14,7 @@ function App() {
     <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
+        <Route path="/services" element={<Servicepage/>}/>
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="get-in-touch" element={<ContactUs/>} />
     </Routes>
