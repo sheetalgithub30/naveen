@@ -9,13 +9,13 @@ import aboutBorder from "../assets/aboutRectangle.svg";
 import border from "../assets/border.svg";
 import borderWhite from "../assets/borderWhite.svg";
 import planetEc from "../assets/planetEc.webp";
-import planet from "../assets/Planet.webp";
-import numerology from "../assets/numerology.webp";
+import planet from "../assets/planet.svg";
+import numerology from "../assets/numerology.svg";
 import varshafal from "../assets/varshafal.svg";
 import palmistry from "../assets/palmistry.svg";
 
 import circle from "../assets/Circle.svg";
-import astro from "../assets/astro.webp";
+import astro from "../assets/astro.svg";
 import HLine from "../assets/HLine.svg";
 import services from "../assets/services.png";
 
@@ -115,7 +115,7 @@ function Homepage() {
       <div className="relative h-full bg-hero bg-cover bg-center text-white pb-2">
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative">
-          <Navbar color={"white"}  />
+          <Navbar color={"white"} />
           <div className="my-11">
             <div className="flex w-[85%] m-auto max-md:inline">
               <div className="w-[55%] m-auto max-md:w-[93%]">
@@ -247,7 +247,7 @@ function Homepage() {
                 <img src={planetEc} className="w-24 h-24 " />
                 <img
                   src={planet}
-                  className="w-14 h-10 absolute top-7 left-4"
+                  className="w-14 h-14 absolute top-5 left-5"
                 ></img>
               </div>
               <div className="mx-5 flex items-center h-10">
@@ -331,7 +331,7 @@ function Homepage() {
                 isLargerThan1000 ? "space-evenly" : "space-between"
               }
               mt={isLargerThan1000 ? "45px" : "1px"}
-              className="px-8"
+              px={isLargerThan600 ? "32px" : "5%"}
             >
               <Flex
                 w="20%"
@@ -342,13 +342,13 @@ function Homepage() {
                 experiences
               </Flex>
               <Flex
-                w={isLargerThan400 ? "70%" : "62%"}
+                w={isLargerThan600 ? "70%" : "65%"}
                 justifyContent="flex-end"
               >
                 <Swiper
                   modules={[Autoplay, Pagination]}
                   style={{ height: "400px" }}
-                  spaceBetween={isLargerThan600?20:60} // Adjust the spacing between slides if needed
+                  spaceBetween={isLargerThan600 ? 20 : 60} // Adjust the spacing between slides if needed
                   slidesPerView={
                     isLargerThan900
                       ? 3
@@ -370,7 +370,9 @@ function Homepage() {
                   <SwiperSlide>
                     <Box
                       h="375px"
-                      minW="236px"
+                      // w={isLargerThan600 ? "236px" : "210px"}
+
+                      minW={isLargerThan600 ? "236px" : "210px"}
                       w="100%"
                       alignItems="center"
                       overflow="hidden"
@@ -413,7 +415,8 @@ function Homepage() {
                   <SwiperSlide>
                     <Box
                       h="375px"
-                      minW="236px"
+                      // w={isLargerThan600 ? "236px" : "210px"}
+                      minW={isLargerThan600 ? "236px" : "210px"}
                       w="100%"
                       alignItems="center"
                       overflow="hidden"
@@ -456,7 +459,8 @@ function Homepage() {
                   <SwiperSlide>
                     <Box
                       h="375px"
-                      minW="236px"
+                      // w={isLargerThan600 ? "236px" : "210px"}
+                      minW={isLargerThan600 ? "236px" : "210px"}
                       w="100%"
                       alignItems="center"
                       overflow="hidden"
@@ -500,7 +504,8 @@ function Homepage() {
                   <SwiperSlide>
                     <Box
                       h="375px"
-                      minW="236px"
+                      // w={isLargerThan600?"236px":"210px"}
+                      minW={isLargerThan600 ? "236px" : "210px"}
                       w="100%"
                       alignItems="center"
                       overflow="hidden"
